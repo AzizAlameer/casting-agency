@@ -1,10 +1,9 @@
 import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
 from sqlalchemy import Column, String, Integer, DateTime
 
-database_path = os.environ.get('DATABASE_URL')
+database_path = 'postgresql://postgres:1366@localhost:5432/test'
 db = SQLAlchemy()
 
 
@@ -17,7 +16,7 @@ def setup_db(app, database_path=database_path):
 
 
 class Actor(db.Model):
-    __tablename__ = 'Actor'
+    __tablename__ = 'actor'
 
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False)
@@ -45,7 +44,7 @@ class Actor(db.Model):
 
 
 class Movie(db.Model):
-    __tablename__ = 'Movie'
+    __tablename__ = 'movie'
 
     id = Column(Integer, primary_key=True)
     title = Column(String, nullable=False)
