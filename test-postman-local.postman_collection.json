@@ -1,0 +1,999 @@
+{
+	"info": {
+		"_postman_id": "09cc0dd5-dc66-447f-9864-b385f60ee703",
+		"name": "test-postman-local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Executive Producer",
+			"item": [
+				{
+					"name": "/movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDM5MDIzMTIyODYwNDE0MjkzOTkiLCJhdWQiOiJjb2ZmZWUiLCJpYXQiOjE2MzI4NTk2MTMsImV4cCI6MTYzMjg2OTYxMywiYXpwIjoiQjlEQXJkRUNnUHZKSXdvTkZzM0ZPSEN5TW1lOFJGNlEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.ug6OKjj-SI9lvPEHiNQoJHRb1SQ3pgA9F2w7Ufer5_PBmdVFn6YBoH7sipDaKcHfz1M4Pzwi1huEtvcLb3ZvX3UzT8ZquXbL0Mb9Jj8Ss9wwjtyYk-PgHzrH2-BN7xBQUOc5tKnS1h-tobTLD4J3h4zfTZCrTF9kjCDVP-dv1OypvXQyZB0Om-a10EbQ4r2SCFrjDwQEDu21nVUY-vNTww4D-DLgzaqov-Op0xS0hgmuYPO8dt_HQqMKEWW0JLN-gkcyHGjOZU6C4_1mBbfzzcF_YB4DozvkjoKITG6YaoR8CBfk7ZjjHw22Y2ymbNC7KQUf2D1-2Leo26w0hcbrog",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/movies",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDM5MDIzMTIyODYwNDE0MjkzOTkiLCJhdWQiOiJjb2ZmZWUiLCJpYXQiOjE2MzI4NTk2MTMsImV4cCI6MTYzMjg2OTYxMywiYXpwIjoiQjlEQXJkRUNnUHZKSXdvTkZzM0ZPSEN5TW1lOFJGNlEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.ug6OKjj-SI9lvPEHiNQoJHRb1SQ3pgA9F2w7Ufer5_PBmdVFn6YBoH7sipDaKcHfz1M4Pzwi1huEtvcLb3ZvX3UzT8ZquXbL0Mb9Jj8Ss9wwjtyYk-PgHzrH2-BN7xBQUOc5tKnS1h-tobTLD4J3h4zfTZCrTF9kjCDVP-dv1OypvXQyZB0Om-a10EbQ4r2SCFrjDwQEDu21nVUY-vNTww4D-DLgzaqov-Op0xS0hgmuYPO8dt_HQqMKEWW0JLN-gkcyHGjOZU6C4_1mBbfzzcF_YB4DozvkjoKITG6YaoR8CBfk7ZjjHw22Y2ymbNC7KQUf2D1-2Leo26w0hcbrog",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/actors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDM5MDIzMTIyODYwNDE0MjkzOTkiLCJhdWQiOiJjb2ZmZWUiLCJpYXQiOjE2MzI4NTk2MTMsImV4cCI6MTYzMjg2OTYxMywiYXpwIjoiQjlEQXJkRUNnUHZKSXdvTkZzM0ZPSEN5TW1lOFJGNlEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.ug6OKjj-SI9lvPEHiNQoJHRb1SQ3pgA9F2w7Ufer5_PBmdVFn6YBoH7sipDaKcHfz1M4Pzwi1huEtvcLb3ZvX3UzT8ZquXbL0Mb9Jj8Ss9wwjtyYk-PgHzrH2-BN7xBQUOc5tKnS1h-tobTLD4J3h4zfTZCrTF9kjCDVP-dv1OypvXQyZB0Om-a10EbQ4r2SCFrjDwQEDu21nVUY-vNTww4D-DLgzaqov-Op0xS0hgmuYPO8dt_HQqMKEWW0JLN-gkcyHGjOZU6C4_1mBbfzzcF_YB4DozvkjoKITG6YaoR8CBfk7ZjjHw22Y2ymbNC7KQUf2D1-2Leo26w0hcbrog",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"Natasha romanov\",\n\t\"release_date\": \"2020-05-06\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/movies",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDM5MDIzMTIyODYwNDE0MjkzOTkiLCJhdWQiOiJjb2ZmZWUiLCJpYXQiOjE2MzI4NTk2MTMsImV4cCI6MTYzMjg2OTYxMywiYXpwIjoiQjlEQXJkRUNnUHZKSXdvTkZzM0ZPSEN5TW1lOFJGNlEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.ug6OKjj-SI9lvPEHiNQoJHRb1SQ3pgA9F2w7Ufer5_PBmdVFn6YBoH7sipDaKcHfz1M4Pzwi1huEtvcLb3ZvX3UzT8ZquXbL0Mb9Jj8Ss9wwjtyYk-PgHzrH2-BN7xBQUOc5tKnS1h-tobTLD4J3h4zfTZCrTF9kjCDVP-dv1OypvXQyZB0Om-a10EbQ4r2SCFrjDwQEDu21nVUY-vNTww4D-DLgzaqov-Op0xS0hgmuYPO8dt_HQqMKEWW0JLN-gkcyHGjOZU6C4_1mBbfzzcF_YB4DozvkjoKITG6YaoR8CBfk7ZjjHw22Y2ymbNC7KQUf2D1-2Leo26w0hcbrog",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Mary\",\r\n\t\"age\": 22,\r\n\t\"gender\": \"female\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{host}}/actors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDM5MDIzMTIyODYwNDE0MjkzOTkiLCJhdWQiOiJjb2ZmZWUiLCJpYXQiOjE2MzI4NTk2MTMsImV4cCI6MTYzMjg2OTYxMywiYXpwIjoiQjlEQXJkRUNnUHZKSXdvTkZzM0ZPSEN5TW1lOFJGNlEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.ug6OKjj-SI9lvPEHiNQoJHRb1SQ3pgA9F2w7Ufer5_PBmdVFn6YBoH7sipDaKcHfz1M4Pzwi1huEtvcLb3ZvX3UzT8ZquXbL0Mb9Jj8Ss9wwjtyYk-PgHzrH2-BN7xBQUOc5tKnS1h-tobTLD4J3h4zfTZCrTF9kjCDVP-dv1OypvXQyZB0Om-a10EbQ4r2SCFrjDwQEDu21nVUY-vNTww4D-DLgzaqov-Op0xS0hgmuYPO8dt_HQqMKEWW0JLN-gkcyHGjOZU6C4_1mBbfzzcF_YB4DozvkjoKITG6YaoR8CBfk7ZjjHw22Y2ymbNC7KQUf2D1-2Leo26w0hcbrog",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"Natasha romanov patched\",\n\t\"release_date\": \"2020-05-06\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/movies/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDM5MDIzMTIyODYwNDE0MjkzOTkiLCJhdWQiOiJjb2ZmZWUiLCJpYXQiOjE2MzI4NTk2MTMsImV4cCI6MTYzMjg2OTYxMywiYXpwIjoiQjlEQXJkRUNnUHZKSXdvTkZzM0ZPSEN5TW1lOFJGNlEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.ug6OKjj-SI9lvPEHiNQoJHRb1SQ3pgA9F2w7Ufer5_PBmdVFn6YBoH7sipDaKcHfz1M4Pzwi1huEtvcLb3ZvX3UzT8ZquXbL0Mb9Jj8Ss9wwjtyYk-PgHzrH2-BN7xBQUOc5tKnS1h-tobTLD4J3h4zfTZCrTF9kjCDVP-dv1OypvXQyZB0Om-a10EbQ4r2SCFrjDwQEDu21nVUY-vNTww4D-DLgzaqov-Op0xS0hgmuYPO8dt_HQqMKEWW0JLN-gkcyHGjOZU6C4_1mBbfzzcF_YB4DozvkjoKITG6YaoR8CBfk7ZjjHw22Y2ymbNC7KQUf2D1-2Leo26w0hcbrog",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"John\",\r\n\t\"age\": 22,\r\n\t\"gender\": \"female\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{host}}/actors/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDM5MDIzMTIyODYwNDE0MjkzOTkiLCJhdWQiOiJjb2ZmZWUiLCJpYXQiOjE2MzI4NTk2MTMsImV4cCI6MTYzMjg2OTYxMywiYXpwIjoiQjlEQXJkRUNnUHZKSXdvTkZzM0ZPSEN5TW1lOFJGNlEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.ug6OKjj-SI9lvPEHiNQoJHRb1SQ3pgA9F2w7Ufer5_PBmdVFn6YBoH7sipDaKcHfz1M4Pzwi1huEtvcLb3ZvX3UzT8ZquXbL0Mb9Jj8Ss9wwjtyYk-PgHzrH2-BN7xBQUOc5tKnS1h-tobTLD4J3h4zfTZCrTF9kjCDVP-dv1OypvXQyZB0Om-a10EbQ4r2SCFrjDwQEDu21nVUY-vNTww4D-DLgzaqov-Op0xS0hgmuYPO8dt_HQqMKEWW0JLN-gkcyHGjOZU6C4_1mBbfzzcF_YB4DozvkjoKITG6YaoR8CBfk7ZjjHw22Y2ymbNC7KQUf2D1-2Leo26w0hcbrog",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/movies/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDM5MDIzMTIyODYwNDE0MjkzOTkiLCJhdWQiOiJjb2ZmZWUiLCJpYXQiOjE2MzI4NTk2MTMsImV4cCI6MTYzMjg2OTYxMywiYXpwIjoiQjlEQXJkRUNnUHZKSXdvTkZzM0ZPSEN5TW1lOFJGNlEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.ug6OKjj-SI9lvPEHiNQoJHRb1SQ3pgA9F2w7Ufer5_PBmdVFn6YBoH7sipDaKcHfz1M4Pzwi1huEtvcLb3ZvX3UzT8ZquXbL0Mb9Jj8Ss9wwjtyYk-PgHzrH2-BN7xBQUOc5tKnS1h-tobTLD4J3h4zfTZCrTF9kjCDVP-dv1OypvXQyZB0Om-a10EbQ4r2SCFrjDwQEDu21nVUY-vNTww4D-DLgzaqov-Op0xS0hgmuYPO8dt_HQqMKEWW0JLN-gkcyHGjOZU6C4_1mBbfzzcF_YB4DozvkjoKITG6YaoR8CBfk7ZjjHw22Y2ymbNC7KQUf2D1-2Leo26w0hcbrog",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/actors/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDM5MDIzMTIyODYwNDE0MjkzOTkiLCJhdWQiOiJjb2ZmZWUiLCJpYXQiOjE2MzI4NTk2MTMsImV4cCI6MTYzMjg2OTYxMywiYXpwIjoiQjlEQXJkRUNnUHZKSXdvTkZzM0ZPSEN5TW1lOFJGNlEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.ug6OKjj-SI9lvPEHiNQoJHRb1SQ3pgA9F2w7Ufer5_PBmdVFn6YBoH7sipDaKcHfz1M4Pzwi1huEtvcLb3ZvX3UzT8ZquXbL0Mb9Jj8Ss9wwjtyYk-PgHzrH2-BN7xBQUOc5tKnS1h-tobTLD4J3h4zfTZCrTF9kjCDVP-dv1OypvXQyZB0Om-a10EbQ4r2SCFrjDwQEDu21nVUY-vNTww4D-DLgzaqov-Op0xS0hgmuYPO8dt_HQqMKEWW0JLN-gkcyHGjOZU6C4_1mBbfzzcF_YB4DozvkjoKITG6YaoR8CBfk7ZjjHw22Y2ymbNC7KQUf2D1-2Leo26w0hcbrog",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Casting Director",
+			"item": [
+				{
+					"name": "/movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjEyZjc3ODJhZjIwY2IwMDZhY2EwODJhIiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NDAzLCJleHAiOjE2MzI4NjU0MDMsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.U_4hkoklJEif3MDMatdv56jYN76N7KqYNz1ZocsqKSho88IUF3_OST8t28kO6EpzITJSbIdCOEkvkgb5B2y9MZJMliUUKejyWEyo-xstc7Vsf3CLpJecXQBy4vCwTCRoE49AIsTMrxoPkldyGZt8hFnhllS24YdgFUSEWp8ehN1j-WxGQ1WKvmsJkZn0SZXRaKFDwKXFomgVmI8-qvMaKT11IZneYWlQFOhNrUgj7DUz575gd9503TvjBbp9mITIeGxxtUMAMStxMdui3DWL7GinVCou1H3QW2omi7X6EJ1oYt9-BRQgO5zZiciS0nutOl_AcT-Q3ySr4Y3zYAMyxQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/movies",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjEyZjc3ODJhZjIwY2IwMDZhY2EwODJhIiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NDAzLCJleHAiOjE2MzI4NjU0MDMsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.U_4hkoklJEif3MDMatdv56jYN76N7KqYNz1ZocsqKSho88IUF3_OST8t28kO6EpzITJSbIdCOEkvkgb5B2y9MZJMliUUKejyWEyo-xstc7Vsf3CLpJecXQBy4vCwTCRoE49AIsTMrxoPkldyGZt8hFnhllS24YdgFUSEWp8ehN1j-WxGQ1WKvmsJkZn0SZXRaKFDwKXFomgVmI8-qvMaKT11IZneYWlQFOhNrUgj7DUz575gd9503TvjBbp9mITIeGxxtUMAMStxMdui3DWL7GinVCou1H3QW2omi7X6EJ1oYt9-BRQgO5zZiciS0nutOl_AcT-Q3ySr4Y3zYAMyxQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/actors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjEyZjc3ODJhZjIwY2IwMDZhY2EwODJhIiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NDAzLCJleHAiOjE2MzI4NjU0MDMsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.U_4hkoklJEif3MDMatdv56jYN76N7KqYNz1ZocsqKSho88IUF3_OST8t28kO6EpzITJSbIdCOEkvkgb5B2y9MZJMliUUKejyWEyo-xstc7Vsf3CLpJecXQBy4vCwTCRoE49AIsTMrxoPkldyGZt8hFnhllS24YdgFUSEWp8ehN1j-WxGQ1WKvmsJkZn0SZXRaKFDwKXFomgVmI8-qvMaKT11IZneYWlQFOhNrUgj7DUz575gd9503TvjBbp9mITIeGxxtUMAMStxMdui3DWL7GinVCou1H3QW2omi7X6EJ1oYt9-BRQgO5zZiciS0nutOl_AcT-Q3ySr4Y3zYAMyxQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"Natasha romanov\",\n\t\"release_date\": \"2020-05-06\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/movies",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjEyZjc3ODJhZjIwY2IwMDZhY2EwODJhIiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NDAzLCJleHAiOjE2MzI4NjU0MDMsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.U_4hkoklJEif3MDMatdv56jYN76N7KqYNz1ZocsqKSho88IUF3_OST8t28kO6EpzITJSbIdCOEkvkgb5B2y9MZJMliUUKejyWEyo-xstc7Vsf3CLpJecXQBy4vCwTCRoE49AIsTMrxoPkldyGZt8hFnhllS24YdgFUSEWp8ehN1j-WxGQ1WKvmsJkZn0SZXRaKFDwKXFomgVmI8-qvMaKT11IZneYWlQFOhNrUgj7DUz575gd9503TvjBbp9mITIeGxxtUMAMStxMdui3DWL7GinVCou1H3QW2omi7X6EJ1oYt9-BRQgO5zZiciS0nutOl_AcT-Q3ySr4Y3zYAMyxQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Mary\",\r\n\t\"age\": 22,\r\n\t\"gender\": \"female\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{host}}/actors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjEyZjc3ODJhZjIwY2IwMDZhY2EwODJhIiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NDAzLCJleHAiOjE2MzI4NjU0MDMsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.U_4hkoklJEif3MDMatdv56jYN76N7KqYNz1ZocsqKSho88IUF3_OST8t28kO6EpzITJSbIdCOEkvkgb5B2y9MZJMliUUKejyWEyo-xstc7Vsf3CLpJecXQBy4vCwTCRoE49AIsTMrxoPkldyGZt8hFnhllS24YdgFUSEWp8ehN1j-WxGQ1WKvmsJkZn0SZXRaKFDwKXFomgVmI8-qvMaKT11IZneYWlQFOhNrUgj7DUz575gd9503TvjBbp9mITIeGxxtUMAMStxMdui3DWL7GinVCou1H3QW2omi7X6EJ1oYt9-BRQgO5zZiciS0nutOl_AcT-Q3ySr4Y3zYAMyxQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"Natasha romanov patched\",\n\t\"release_date\": \"2020-05-06\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/movies/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjEyZjc3ODJhZjIwY2IwMDZhY2EwODJhIiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NDAzLCJleHAiOjE2MzI4NjU0MDMsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.U_4hkoklJEif3MDMatdv56jYN76N7KqYNz1ZocsqKSho88IUF3_OST8t28kO6EpzITJSbIdCOEkvkgb5B2y9MZJMliUUKejyWEyo-xstc7Vsf3CLpJecXQBy4vCwTCRoE49AIsTMrxoPkldyGZt8hFnhllS24YdgFUSEWp8ehN1j-WxGQ1WKvmsJkZn0SZXRaKFDwKXFomgVmI8-qvMaKT11IZneYWlQFOhNrUgj7DUz575gd9503TvjBbp9mITIeGxxtUMAMStxMdui3DWL7GinVCou1H3QW2omi7X6EJ1oYt9-BRQgO5zZiciS0nutOl_AcT-Q3ySr4Y3zYAMyxQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"John\",\r\n\t\"age\": 22,\r\n\t\"gender\": \"female\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{host}}/actors/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjEyZjc3ODJhZjIwY2IwMDZhY2EwODJhIiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NDAzLCJleHAiOjE2MzI4NjU0MDMsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.U_4hkoklJEif3MDMatdv56jYN76N7KqYNz1ZocsqKSho88IUF3_OST8t28kO6EpzITJSbIdCOEkvkgb5B2y9MZJMliUUKejyWEyo-xstc7Vsf3CLpJecXQBy4vCwTCRoE49AIsTMrxoPkldyGZt8hFnhllS24YdgFUSEWp8ehN1j-WxGQ1WKvmsJkZn0SZXRaKFDwKXFomgVmI8-qvMaKT11IZneYWlQFOhNrUgj7DUz575gd9503TvjBbp9mITIeGxxtUMAMStxMdui3DWL7GinVCou1H3QW2omi7X6EJ1oYt9-BRQgO5zZiciS0nutOl_AcT-Q3ySr4Y3zYAMyxQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/movies/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjEyZjc3ODJhZjIwY2IwMDZhY2EwODJhIiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NDAzLCJleHAiOjE2MzI4NjU0MDMsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.U_4hkoklJEif3MDMatdv56jYN76N7KqYNz1ZocsqKSho88IUF3_OST8t28kO6EpzITJSbIdCOEkvkgb5B2y9MZJMliUUKejyWEyo-xstc7Vsf3CLpJecXQBy4vCwTCRoE49AIsTMrxoPkldyGZt8hFnhllS24YdgFUSEWp8ehN1j-WxGQ1WKvmsJkZn0SZXRaKFDwKXFomgVmI8-qvMaKT11IZneYWlQFOhNrUgj7DUz575gd9503TvjBbp9mITIeGxxtUMAMStxMdui3DWL7GinVCou1H3QW2omi7X6EJ1oYt9-BRQgO5zZiciS0nutOl_AcT-Q3ySr4Y3zYAMyxQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/actors/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjEyZjc3ODJhZjIwY2IwMDZhY2EwODJhIiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NDAzLCJleHAiOjE2MzI4NjU0MDMsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.U_4hkoklJEif3MDMatdv56jYN76N7KqYNz1ZocsqKSho88IUF3_OST8t28kO6EpzITJSbIdCOEkvkgb5B2y9MZJMliUUKejyWEyo-xstc7Vsf3CLpJecXQBy4vCwTCRoE49AIsTMrxoPkldyGZt8hFnhllS24YdgFUSEWp8ehN1j-WxGQ1WKvmsJkZn0SZXRaKFDwKXFomgVmI8-qvMaKT11IZneYWlQFOhNrUgj7DUz575gd9503TvjBbp9mITIeGxxtUMAMStxMdui3DWL7GinVCou1H3QW2omi7X6EJ1oYt9-BRQgO5zZiciS0nutOl_AcT-Q3ySr4Y3zYAMyxQ",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Casting Assistant",
+			"item": [
+				{
+					"name": "/movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjE1MzY1ZjZmZjg2ZjYwMDZhMzIwYmI1IiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NjM2LCJleHAiOjE2MzI4NjU2MzYsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.kupwpxcBR1SJuqVccKu79qMv7E30JjS_x59LgTuhUo7a5eYEhgOgPJQQz8hO4ar2RwUwydlqvrRUqOX6ekHbVyaGkh2CdKlUQF3bzCzQ5b1JBq8aqdzkS9SCD6__9353fcTbStrXNzDUzi57AV85MvM_1gCTTeKYvCV_ODlDLii49z1Xh_wKNwJqk_UJ6hv5nSE52y81zaL0xtfQx3AWI1Rw761B1sSRj_seZQ9qnOawt_-YXBqvawNlNL4uVINKOCihRtfmG8-ujU1VaeDRKF3tp9arhuvOzRCw4GxItB6aEbqP25sGLZv5SE6L-AapxLVltnbhYG5_GdgExhdoPw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/movies",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjE1MzY1ZjZmZjg2ZjYwMDZhMzIwYmI1IiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NjM2LCJleHAiOjE2MzI4NjU2MzYsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.kupwpxcBR1SJuqVccKu79qMv7E30JjS_x59LgTuhUo7a5eYEhgOgPJQQz8hO4ar2RwUwydlqvrRUqOX6ekHbVyaGkh2CdKlUQF3bzCzQ5b1JBq8aqdzkS9SCD6__9353fcTbStrXNzDUzi57AV85MvM_1gCTTeKYvCV_ODlDLii49z1Xh_wKNwJqk_UJ6hv5nSE52y81zaL0xtfQx3AWI1Rw761B1sSRj_seZQ9qnOawt_-YXBqvawNlNL4uVINKOCihRtfmG8-ujU1VaeDRKF3tp9arhuvOzRCw4GxItB6aEbqP25sGLZv5SE6L-AapxLVltnbhYG5_GdgExhdoPw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/actors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjE1MzY1ZjZmZjg2ZjYwMDZhMzIwYmI1IiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NjM2LCJleHAiOjE2MzI4NjU2MzYsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.kupwpxcBR1SJuqVccKu79qMv7E30JjS_x59LgTuhUo7a5eYEhgOgPJQQz8hO4ar2RwUwydlqvrRUqOX6ekHbVyaGkh2CdKlUQF3bzCzQ5b1JBq8aqdzkS9SCD6__9353fcTbStrXNzDUzi57AV85MvM_1gCTTeKYvCV_ODlDLii49z1Xh_wKNwJqk_UJ6hv5nSE52y81zaL0xtfQx3AWI1Rw761B1sSRj_seZQ9qnOawt_-YXBqvawNlNL4uVINKOCihRtfmG8-ujU1VaeDRKF3tp9arhuvOzRCw4GxItB6aEbqP25sGLZv5SE6L-AapxLVltnbhYG5_GdgExhdoPw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"Natasha romanov\",\n\t\"release_date\": \"2020-05-06\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/movies",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjE1MzY1ZjZmZjg2ZjYwMDZhMzIwYmI1IiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NjM2LCJleHAiOjE2MzI4NjU2MzYsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.kupwpxcBR1SJuqVccKu79qMv7E30JjS_x59LgTuhUo7a5eYEhgOgPJQQz8hO4ar2RwUwydlqvrRUqOX6ekHbVyaGkh2CdKlUQF3bzCzQ5b1JBq8aqdzkS9SCD6__9353fcTbStrXNzDUzi57AV85MvM_1gCTTeKYvCV_ODlDLii49z1Xh_wKNwJqk_UJ6hv5nSE52y81zaL0xtfQx3AWI1Rw761B1sSRj_seZQ9qnOawt_-YXBqvawNlNL4uVINKOCihRtfmG8-ujU1VaeDRKF3tp9arhuvOzRCw4GxItB6aEbqP25sGLZv5SE6L-AapxLVltnbhYG5_GdgExhdoPw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Mary\",\r\n\t\"age\": 22,\r\n\t\"gender\": \"female\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{host}}/actors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjE1MzY1ZjZmZjg2ZjYwMDZhMzIwYmI1IiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NjM2LCJleHAiOjE2MzI4NjU2MzYsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.kupwpxcBR1SJuqVccKu79qMv7E30JjS_x59LgTuhUo7a5eYEhgOgPJQQz8hO4ar2RwUwydlqvrRUqOX6ekHbVyaGkh2CdKlUQF3bzCzQ5b1JBq8aqdzkS9SCD6__9353fcTbStrXNzDUzi57AV85MvM_1gCTTeKYvCV_ODlDLii49z1Xh_wKNwJqk_UJ6hv5nSE52y81zaL0xtfQx3AWI1Rw761B1sSRj_seZQ9qnOawt_-YXBqvawNlNL4uVINKOCihRtfmG8-ujU1VaeDRKF3tp9arhuvOzRCw4GxItB6aEbqP25sGLZv5SE6L-AapxLVltnbhYG5_GdgExhdoPw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"Natasha romanov patched\",\n\t\"release_date\": \"2020-05-06\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/movies/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjE1MzY1ZjZmZjg2ZjYwMDZhMzIwYmI1IiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NjM2LCJleHAiOjE2MzI4NjU2MzYsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.kupwpxcBR1SJuqVccKu79qMv7E30JjS_x59LgTuhUo7a5eYEhgOgPJQQz8hO4ar2RwUwydlqvrRUqOX6ekHbVyaGkh2CdKlUQF3bzCzQ5b1JBq8aqdzkS9SCD6__9353fcTbStrXNzDUzi57AV85MvM_1gCTTeKYvCV_ODlDLii49z1Xh_wKNwJqk_UJ6hv5nSE52y81zaL0xtfQx3AWI1Rw761B1sSRj_seZQ9qnOawt_-YXBqvawNlNL4uVINKOCihRtfmG8-ujU1VaeDRKF3tp9arhuvOzRCw4GxItB6aEbqP25sGLZv5SE6L-AapxLVltnbhYG5_GdgExhdoPw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"John\",\r\n\t\"age\": 22,\r\n\t\"gender\": \"female\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{host}}/actors/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjE1MzY1ZjZmZjg2ZjYwMDZhMzIwYmI1IiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NjM2LCJleHAiOjE2MzI4NjU2MzYsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.kupwpxcBR1SJuqVccKu79qMv7E30JjS_x59LgTuhUo7a5eYEhgOgPJQQz8hO4ar2RwUwydlqvrRUqOX6ekHbVyaGkh2CdKlUQF3bzCzQ5b1JBq8aqdzkS9SCD6__9353fcTbStrXNzDUzi57AV85MvM_1gCTTeKYvCV_ODlDLii49z1Xh_wKNwJqk_UJ6hv5nSE52y81zaL0xtfQx3AWI1Rw761B1sSRj_seZQ9qnOawt_-YXBqvawNlNL4uVINKOCihRtfmG8-ujU1VaeDRKF3tp9arhuvOzRCw4GxItB6aEbqP25sGLZv5SE6L-AapxLVltnbhYG5_GdgExhdoPw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/movies/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjE1MzY1ZjZmZjg2ZjYwMDZhMzIwYmI1IiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NjM2LCJleHAiOjE2MzI4NjU2MzYsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.kupwpxcBR1SJuqVccKu79qMv7E30JjS_x59LgTuhUo7a5eYEhgOgPJQQz8hO4ar2RwUwydlqvrRUqOX6ekHbVyaGkh2CdKlUQF3bzCzQ5b1JBq8aqdzkS9SCD6__9353fcTbStrXNzDUzi57AV85MvM_1gCTTeKYvCV_ODlDLii49z1Xh_wKNwJqk_UJ6hv5nSE52y81zaL0xtfQx3AWI1Rw761B1sSRj_seZQ9qnOawt_-YXBqvawNlNL4uVINKOCihRtfmG8-ujU1VaeDRKF3tp9arhuvOzRCw4GxItB6aEbqP25sGLZv5SE6L-AapxLVltnbhYG5_GdgExhdoPw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/actors/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjE1MzY1ZjZmZjg2ZjYwMDZhMzIwYmI1IiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NjM2LCJleHAiOjE2MzI4NjU2MzYsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.kupwpxcBR1SJuqVccKu79qMv7E30JjS_x59LgTuhUo7a5eYEhgOgPJQQz8hO4ar2RwUwydlqvrRUqOX6ekHbVyaGkh2CdKlUQF3bzCzQ5b1JBq8aqdzkS9SCD6__9353fcTbStrXNzDUzi57AV85MvM_1gCTTeKYvCV_ODlDLii49z1Xh_wKNwJqk_UJ6hv5nSE52y81zaL0xtfQx3AWI1Rw761B1sSRj_seZQ9qnOawt_-YXBqvawNlNL4uVINKOCihRtfmG8-ujU1VaeDRKF3tp9arhuvOzRCw4GxItB6aEbqP25sGLZv5SE6L-AapxLVltnbhYG5_GdgExhdoPw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:5000",
+			"type": "string"
+		}
+	]
+}
