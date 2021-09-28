@@ -24,9 +24,6 @@ class Actor(db.Model):
     age = Column(Integer, nullable=False)
     gender = Column(String, nullable=False)
 
-    def get_name(self):
-        return self.name
-
     def insert(self):
         db.session.add(self)
         db.session.commit()
@@ -52,10 +49,7 @@ class Movie(db.Model):
 
     id = Column(Integer, primary_key=True)
     title = Column(String, nullable=False)
-    release_date = Column(DateTime(), default=datetime.utcnow)
-
-    def get_title(self):
-        return self.title
+    release_date = Column(DateTime(),nullable=False)
 
     def insert(self):
         db.session.add(self)
