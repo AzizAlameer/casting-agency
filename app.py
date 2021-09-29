@@ -3,7 +3,7 @@ from flask import Flask, request, abort, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 from auth import requires_auth, AuthError
-from models import Movie, Actor,setup_db
+from models import Movie, Actor, setup_db
 
 
 def create_app(test_config=None):
@@ -11,7 +11,6 @@ def create_app(test_config=None):
     app = Flask(__name__)
     setup_db(app)
     CORS(app, resources={"/": {"origins": "*"}})
-
 
     @app.after_request
     def after_request(response):

@@ -2,6 +2,9 @@
 Udacity capstone project
 The Casting Agency models a company that is responsible for creating movies and managing and assigning actors to those movies. You are an Executive Producer within the company and are creating a system to simplify and streamline your process.
 
+### Motivation
+The motivation for this project is to create my final project which is the capstone project for Udacity's Fullstack Nanodegree program.
+
 # API URL 
 - **Heroku:** `https://morning-brushlands-62267.herokuapp.com/`
 - **Localhost:** base URL is `http://127.0.0.1:5000/`
@@ -51,7 +54,29 @@ flask run --reload
 
 The `--reload` flag will detect file changes and restart the server automatically.
 
+### Running the server
+To host the project on heroku make sure you download heroku and you are loggedin in your command prompt 
+and simply run the following:
 
+```bash
+heroku create name_of_your_app
+git remote add heroku heroku_git_url
+```
+run this code in order to create your database and connect it to your application:
+
+```bash
+heroku addons:create heroku-postgresql:hobby-dev --app name_of_your_application
+```
+commit and push your project:
+```bash
+git push heroku master
+```
+when heroku is done building your app setup your DB:
+```bash
+heroku run python manage.py db upgrade --app name_of_your_application
+heroku run python manage.py seed --app name_of_your_application
+```
+now you should have an up and running web application 
 ## API Reference
 
 ### Error Handling
