@@ -50,6 +50,8 @@ def create_app(test_config=None):
     @requires_auth('post:movies')
     def post_movies(f):
         data = request.get_json()
+        if data is None:
+            abort(400)
         title = data.get('title', None)
         release_date = data.get('release_date', None)
 
@@ -70,6 +72,8 @@ def create_app(test_config=None):
     @requires_auth('patch:movies')
     def patch_movies(f, id):
         data = request.get_json()
+        if data is None:
+            abort(400)
         title = data.get('title', None)
         release_date = data.get('release_date', None)
 
@@ -90,7 +94,7 @@ def create_app(test_config=None):
                 'success': True,
                 'movie': movie.format()
             }), 200
-        except Exception:
+        except:
             abort(422)
 
     @app.route("/movies/<id>", methods=["DELETE"])
@@ -131,6 +135,8 @@ def create_app(test_config=None):
     def post_actors(f):
 
         data = request.get_json()
+        if data is None:
+            abort(400)
         name = data.get('name', None)
         age = data.get('age', None)
         gender = data.get('gender', None)
@@ -154,6 +160,8 @@ def create_app(test_config=None):
     def patch_actors(f, id):
 
         data = request.get_json()
+        if data is None:
+            abort(400)
         name = data.get('name', None)
         age = data.get('age', None)
         gender = data.get('gender', None)

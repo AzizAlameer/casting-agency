@@ -7,14 +7,15 @@ from app import create_app
 
 
 
-DIRECTOR_TOKEN = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjEyZjc3ODJhZjIwY2IwMDZhY2EwODJhIiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NDAzLCJleHAiOjE2MzI4NjU0MDMsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.U_4hkoklJEif3MDMatdv56jYN76N7KqYNz1ZocsqKSho88IUF3_OST8t28kO6EpzITJSbIdCOEkvkgb5B2y9MZJMliUUKejyWEyo-xstc7Vsf3CLpJecXQBy4vCwTCRoE49AIsTMrxoPkldyGZt8hFnhllS24YdgFUSEWp8ehN1j-WxGQ1WKvmsJkZn0SZXRaKFDwKXFomgVmI8-qvMaKT11IZneYWlQFOhNrUgj7DUz575gd9503TvjBbp9mITIeGxxtUMAMStxMdui3DWL7GinVCou1H3QW2omi7X6EJ1oYt9-BRQgO5zZiciS0nutOl_AcT-Q3ySr4Y3zYAMyxQ'
-ASSISTANT_TOKEN = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjE1MzY1ZjZmZjg2ZjYwMDZhMzIwYmI1IiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODU1NjM2LCJleHAiOjE2MzI4NjU2MzYsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.kupwpxcBR1SJuqVccKu79qMv7E30JjS_x59LgTuhUo7a5eYEhgOgPJQQz8hO4ar2RwUwydlqvrRUqOX6ekHbVyaGkh2CdKlUQF3bzCzQ5b1JBq8aqdzkS9SCD6__9353fcTbStrXNzDUzi57AV85MvM_1gCTTeKYvCV_ODlDLii49z1Xh_wKNwJqk_UJ6hv5nSE52y81zaL0xtfQx3AWI1Rw761B1sSRj_seZQ9qnOawt_-YXBqvawNlNL4uVINKOCihRtfmG8-ujU1VaeDRKF3tp9arhuvOzRCw4GxItB6aEbqP25sGLZv5SE6L-AapxLVltnbhYG5_GdgExhdoPw'
-PRODUCER_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDM5MDIzMTIyODYwNDE0MjkzOTkiLCJhdWQiOiJjb2ZmZWUiLCJpYXQiOjE2MzI4NTk2MTMsImV4cCI6MTYzMjg2OTYxMywiYXpwIjoiQjlEQXJkRUNnUHZKSXdvTkZzM0ZPSEN5TW1lOFJGNlEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.ug6OKjj-SI9lvPEHiNQoJHRb1SQ3pgA9F2w7Ufer5_PBmdVFn6YBoH7sipDaKcHfz1M4Pzwi1huEtvcLb3ZvX3UzT8ZquXbL0Mb9Jj8Ss9wwjtyYk-PgHzrH2-BN7xBQUOc5tKnS1h-tobTLD4J3h4zfTZCrTF9kjCDVP-dv1OypvXQyZB0Om-a10EbQ4r2SCFrjDwQEDu21nVUY-vNTww4D-DLgzaqov-Op0xS0hgmuYPO8dt_HQqMKEWW0JLN-gkcyHGjOZU6C4_1mBbfzzcF_YB4DozvkjoKITG6YaoR8CBfk7ZjjHw22Y2ymbNC7KQUf2D1-2Leo26w0hcbrog"
+DIRECTOR_TOKEN = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDM5MDIzMTIyODYwNDE0MjkzOTkiLCJhdWQiOiJjb2ZmZWUiLCJpYXQiOjE2MzI4OTU0NTIsImV4cCI6MTYzMjkwNTQ1MiwiYXpwIjoiQjlEQXJkRUNnUHZKSXdvTkZzM0ZPSEN5TW1lOFJGNlEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.EYL_IwYZrKLPbTDZhgOgDwECMWwtW-Foi0VAl_xvlfanZN0-vst-12FYpB_D4i49vQRyeYdGkIm3gGw-9hVAqBwDhe6WcSNDj9MhJqXvAI8P_HQnVcjBTr5qGaEPNGNFdv03rlxcHyt51I7TR1BSY_vvYy9FazKLZTzcjmHAts7pdboINd9hNxS8duA9TZ2PFge5LiAAZKim5kygmTm7PnhpBl5b6sFy2rd1IMR5jBBYhjkXaIKOHNinzrJEhw-kHdxPHZSkLpsDKqRVXJFEZj5WyXmqvgEkzjLtGp6obdlTOMbL3rvJ-keHMHWWWFYmCttwLEjYgN3Vk2zssDi1IA'
+ASSISTANT_TOKEN = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjE1MzY1ZjZmZjg2ZjYwMDZhMzIwYmI1IiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODk0ODM5LCJleHAiOjE2MzI5MDQ4MzksImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.RRNtsfrxlhlwPNV1niQuRjPksvClV9whynDo0nJGDvWNAUCCGtsfhtwPSJoqAKdCAS1zyO8NmT2n4YJZWtUEOWcnh4V4dfgR7SHY6RNdJookXI1uWlnMz6NlnEZAmX8pYtHR8jdE16WwMBe-fl9CquaRCo1znpEXIb6nNZxBLQyFu9SXJWGq9UL1p5_Ik0QRgYaNo3USX96RHilz3W9D5-zKcJbqcLniSXb7Upn3yI6XuSHPihv8TJK7SPQuzG-g487h7OPsuUCIQ5HcMH_hwera1eLd-lwe08OGVIOoPSQCVdd8O1ryjuIXHN-Eh29Tp2ZrxXUi1ye4U8sybXdPig'
+PRODUCER_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Inh5SjYyQmJhc2w4TVduZEF5VzNxZCJ9.eyJpc3MiOiJodHRwczovL2Rldi03MGZuZDJseS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjEyZjc3ODJhZjIwY2IwMDZhY2EwODJhIiwiYXVkIjoiY29mZmVlIiwiaWF0IjoxNjMyODk2MTMyLCJleHAiOjE2MzI5MDYxMzIsImF6cCI6IkI5REFyZEVDZ1B2Skl3b05GczNGT0hDeU1tZThSRjZRIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.kyGSgds5b32Iw4voLKx302Ca6EpUgMJZCx4-vPISYfk6HJ0m5g1pyVTuc7tuWix3J78i3nG8gzNTc8lsdO1HjgtojyE9o_KmYKVcPAjK7kkMZ8K6xNiZcmd5gcfC2_qF-odAdgbbaehgZHVe0iOY_9dtAJcrRhQF0072DkpiZ_-W9DVBuS3XU4d-BUcBl88xU-wF4AVgMdgqXOTbDq2I-0-y6AadDA-wNIZhXVc0yVpoPzKl8oNjNwMDzy8UFEi0nljWYeh43xUPVikz9cYtUrM1xsQZZTIduyjxz7MxD8YvFHXjf3_SuyJGEDmFB_KhcCHbxhEYR022qn-dCydwjA"
 
 CASTING_DIRECTOR={'Authorization': f'Bearer {DIRECTOR_TOKEN}'}
 CASTING_ASSISTANT={'Authorization': f'Bearer {ASSISTANT_TOKEN}'}
-EXECUTIVE_PRODUCER={'Authorization': f'Bearer {DIRECTOR_TOKEN}'}
+EXECUTIVE_PRODUCER={'Authorization': f'Bearer {PRODUCER_TOKEN}'}
 
+#https://dev-70fnd2ly.us.auth0.com/authorize?audience=coffee&response_type=token&client_id=B9DArdECgPvJIwoNFs3FOHCyMme8RF6Q&redirect_uri=http://127.0.0.1:5000/
 
 class CastingAgencyTestCase(unittest.TestCase):
 
@@ -56,7 +57,6 @@ class CastingAgencyTestCase(unittest.TestCase):
 
         self.assertEqual(res.status_code, 401)
         self.assertEqual(data['success'], False)
-        self.assertFalse(len(data['movies']))
 
     def test_post_actor_201(self):
         res = self.client().post('/actors', json=self.actor, headers=CASTING_DIRECTOR)
@@ -74,12 +74,14 @@ class CastingAgencyTestCase(unittest.TestCase):
         self.assertEqual(data['success'], False)
 
     def test_post_actor_400(self):
-        res = self.client().post('/actors', json='', headers=CASTING_DIRECTOR)
+        res = self.client().post('/actors', json={}, headers=CASTING_DIRECTOR)
         data = json.loads(res.data)
 
         self.assertEqual(res.status_code, 400)
         self.assertEqual(data['success'], False)
-        self.assertEqual(data['message'], 'Bad request, Wrong input')
+        self.assertEqual(data['message'], 'bad request')
+    
+
 
     def test_patch_actor_200(self):
         res = self.client().patch('/actors/1', json=self.actor, headers=EXECUTIVE_PRODUCER)
@@ -90,7 +92,7 @@ class CastingAgencyTestCase(unittest.TestCase):
         self.assertTrue(len(data['actor']))
 
     def test_patch_actor_400(self):
-        res = self.client().patch('/actors/1', json='', headers=EXECUTIVE_PRODUCER)
+        res = self.client().patch('/actors/1', json={}, headers=EXECUTIVE_PRODUCER)
         data = json.loads(res.data)
 
         self.assertEqual(res.status_code, 400)
@@ -104,12 +106,14 @@ class CastingAgencyTestCase(unittest.TestCase):
         self.assertEqual(data['success'], False)
 
     def test_delete_actor_200(self):
-        res = self.client().delete('/actors/1', headers=EXECUTIVE_PRODUCER)
+        res = self.client().delete('/actors/2', headers=EXECUTIVE_PRODUCER)
         data = json.loads(res.data)
 
         self.assertEqual(res.status_code, 200)
         self.assertEqual(data['success'], True)
-        self.assertEqual(data['deleted'], 1)
+        self.assertEqual(data['deleted'], '2')
+
+
 
     def test_delete_actor_404(self):
         res = self.client().delete('/actors/1000', headers=EXECUTIVE_PRODUCER)
@@ -119,7 +123,7 @@ class CastingAgencyTestCase(unittest.TestCase):
         self.assertEqual(data['success'], False)
 
     def test_delete_actor_401(self):
-        res = self.client().delete('/actors/1', headers='')
+        res = self.client().delete('/actors/2', headers='')
         data = json.loads(res.data)
 
         self.assertEqual(res.status_code, 401)
@@ -127,7 +131,6 @@ class CastingAgencyTestCase(unittest.TestCase):
 
 
         #movies
-
     def test_get_movies(self):
         res = self.client().get('/movies', headers=CASTING_ASSISTANT)
         data = json.loads(res.data)
@@ -142,7 +145,7 @@ class CastingAgencyTestCase(unittest.TestCase):
 
         self.assertEqual(res.status_code, 401)
         self.assertEqual(data['success'], False)
-        self.assertFalse(len(data['movies']))
+        
 
     def test_post_movie(self):
         res = self.client().post('/movies', json=self.movie, headers=CASTING_DIRECTOR)
@@ -160,23 +163,22 @@ class CastingAgencyTestCase(unittest.TestCase):
         self.assertEqual(data['success'], False)
 
     def test_post_movie_400(self):
-        res = self.client().post('/movies', json='', headers=CASTING_DIRECTOR)
+        res = self.client().post('/movies', json={}, headers=CASTING_DIRECTOR)
         data = json.loads(res.data)
 
         self.assertEqual(res.status_code, 400)
         self.assertEqual(data['success'], False)
-        self.assertEqual(data['message'], 'Bad request, Worng input')
+        self.assertEqual(data['message'], 'bad request')
 
     def test_patch_movie(self):
-        res = self.client().patch('/movies/1', json=self.movie, headers=PRODUCER_TOKEN)
+        res = self.client().patch('/movies/1', json=self.movie, headers=EXECUTIVE_PRODUCER)
         data = json.loads(res.data)
 
         self.assertEqual(res.status_code, 200)
         self.assertEqual(data['success'], True)
-        self.assertTrue(len(data['movie']))
 
     def test_patch_movie_400(self):
-        res = self.client().patch('/movies/1', json='', headers=PRODUCER_TOKEN)
+        res = self.client().patch('/movies/1', json={}, headers=EXECUTIVE_PRODUCER)
         data = json.loads(res.data)
 
         self.assertEqual(res.status_code, 400)
@@ -188,29 +190,28 @@ class CastingAgencyTestCase(unittest.TestCase):
 
         self.assertEqual(res.status_code, 401)
         self.assertEqual(data['success'], False)
-
+    
     def test_delete_movie(self):
-        res = self.client().delete('/movies/1', headers=PRODUCER_TOKEN)
+        res = self.client().delete('/movies/2', headers=CASTING_DIRECTOR)
         data = json.loads(res.data)
 
         self.assertEqual(res.status_code, 200)
         self.assertEqual(data['success'], True)
-        self.assertEqual(data['deleted'], 1)
+        self.assertEqual(data['deleted'], '2')
 
     def test_delete_movie_404(self):
-        res = self.client().delete('/movies/2134', headers=PRODUCER_TOKEN)
+        res = self.client().delete('/movies/2134', headers=CASTING_DIRECTOR)
         data = json.loads(res.data)
 
         self.assertEqual(res.status_code, 404)
         self.assertEqual(data['success'], False)
 
     def test_delete_movie_401(self):
-        res = self.client().delete('/movies/1', headers='')
+        res = self.client().delete('/movies/2', headers='')
         data = json.loads(res.data)
 
         self.assertEqual(res.status_code, 401)
         self.assertEqual(data['success'], False)
-
 
 
 if __name__ == '__main__':
