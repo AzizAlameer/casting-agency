@@ -70,6 +70,8 @@ The API will return three error types when requests fail:
 - 405: Method Not Allowed
 
 ### Endpoints 
+A postman collection provided to test both Local and heroku server with all variables provided
+(test-postman-local.postman_collection) 
 
 #### GET /movies
 
@@ -128,18 +130,18 @@ The API will return three error types when requests fail:
     - Roles:Casting Director,Executive Producer.
 
 - Sample: `curl http://127.0.0.1:5000/actors -X POST -H "Content-Type: application/json" -d '{
-	"name": "Nancy",
-	"age": 21,
+	"name": "Maha",
+	"age": 23,
 	"gender": "female"
 }'`
 
 ```
 {
     "actor": {
-        "age": 21,
+        "age": 23,
         "gender": "female",
         "id": 4,
-        "name": "Nancy"
+        "name": "Maha"
     },
     "success": true
 }
@@ -244,10 +246,9 @@ The API will return three error types when requests fail:
 ```
 
 ## Testing
-To run the tests, run
+To run the tests,  delete and create your db and run the following
 ```
-dropdb trivia_test
-createdb trivia_test
-psql trivia_test < trivia.psql
-python test_flaskr.py
+python manage.py db upgrade
+python manage.py seed
+python test_app.py
 ```
