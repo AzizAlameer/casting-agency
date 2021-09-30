@@ -42,7 +42,7 @@ def create_app(test_config=None):
                 'movies': movies_format
             }), 200
 
-        except:
+        except BaseException:
             abort(422)
 
     @app.route('/movies', methods=['POST'])
@@ -64,7 +64,7 @@ def create_app(test_config=None):
                 'success': True,
                 'movie': movie.format()
             }), 201
-        except:
+        except BaseException:
             abort(422)
 
     @app.route('/movies/<int:id>', methods=['PATCH'])
@@ -93,7 +93,7 @@ def create_app(test_config=None):
                 'success': True,
                 'movie': movie.format()
             }), 200
-        except:
+        except BaseException:
             abort(422)
 
     @app.route("/movies/<id>", methods=["DELETE"])
@@ -109,7 +109,7 @@ def create_app(test_config=None):
                 "success": True,
                 "deleted": id
             }), 200
-        except:
+        except BaseException:
             abort(422)
 
     @app.route('/actors', methods=['GET'])
@@ -126,7 +126,7 @@ def create_app(test_config=None):
                 'actors': actor_format
             }), 200
 
-        except:
+        except BaseException:
             abort(422)
 
     @app.route('/actors', methods=['POST'])
@@ -151,7 +151,7 @@ def create_app(test_config=None):
                 'success': True,
                 'actor': actor.format()
             }), 201
-        except:
+        except BaseException:
             abort(422)
 
     @app.route('/actors/<int:id>', methods=['PATCH'])
@@ -183,7 +183,7 @@ def create_app(test_config=None):
                 'success': True,
                 'actor': actor.format()
             }), 200
-        except:
+        except BaseException:
             abort(422)
 
     @app.route("/actors/<id>", methods=["DELETE"])
@@ -199,7 +199,7 @@ def create_app(test_config=None):
                 "success": True,
                 "deleted": id
             }), 200
-        except:
+        except BaseException:
             abort(422)
 
             # Error Handling
